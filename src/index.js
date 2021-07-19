@@ -1,12 +1,14 @@
-
 // hub for all modules to be used
-import {navBar} from "nav.js";
+import nav from "./nav.js";
 
 const page = (() => {
-    const display = document.querySelector("#content");
-    navBar();
 
-    display.append(navBar.nav);
+    const displayAppend = () => {
+        const display = document.querySelector("#content");
+        display.appendChild(nav.createNav());
+    };
+    
+    return {displayAppend}
 })();
 
-page();
+page.displayAppend();
