@@ -7,7 +7,7 @@ const menu = (() => {
     // create title container
     const titleContainer = document.createElement('div');
     const title = document.createElement('h1');
-    title.textContent = Menu;
+    title.textContent = "Menu";
     titleContainer.appendChild(title);
 
     // menu items

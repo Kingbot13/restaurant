@@ -14,5 +14,14 @@ const contact = (() => {
     const hours = document.createElement('p');
     hours.textContent = `Our hours are Monday - Saturday 11am - 11pm`;
 
-    
+    const address = document.createElement('p');
+    address.textContent = `123 Potato Street 
+    Potato, TN 12345`;
+
+    container.append(titleContainer, phone, hours, address);
+
+    return {container};
+
 })();
+
+export default contact;
