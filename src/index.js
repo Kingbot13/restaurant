@@ -3,12 +3,19 @@ import nav from "./nav.js";
 import home from "./homepage";
 import menu from "./menu";
 import contact from "./contact";
+import mainPotato from "./images/potatoimg.jpg";
 
 const page = (() => {
 
     const displayAppend = () => {
         const display = document.querySelector("#content");
         display.appendChild(nav.createNav());
+
+        // add main img
+        const mainImg = new Image();
+        mainImg.src = mainPotato;
+
+        document.body.style.backgroundImage = `url('${mainImg}')`;
 
         // append homepage on initial load
 
