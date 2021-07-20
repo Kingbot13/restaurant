@@ -3,7 +3,9 @@ import nav from "./nav.js";
 import home from "./homepage";
 import menu from "./menu";
 import contact from "./contact";
-import mainPotato from "./images/potatoimg.jpg";
+// import mainPotato from "./potatoimg.jpg";
+import potatoBackground from "./potatobackground.jpg";
+import "./styles.css";
 
 const page = (() => {
 
@@ -13,9 +15,9 @@ const page = (() => {
 
         // add main img
         const mainImg = new Image();
-        mainImg.src = mainPotato;
+        mainImg.src = potatoBackground;
 
-        document.body.style.backgroundImage = `url('${mainImg}')`;
+        // document.body.style.backgroundImage = `url('${mainImg}')`;
 
         // append homepage on initial load
 
